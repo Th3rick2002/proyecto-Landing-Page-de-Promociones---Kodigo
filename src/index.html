@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Siman</title>
+    <link rel="icon" href="../public/favicon-196x196.png">
+    <link rel="stylesheet" href="./style/base.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#"> <img src="assets/logos/sima.com.svg" alt="Siman"> </a>
+        </div>
+
+        <div class="header__search">
+            <form action="">
+                <label class="header__search--label">
+                    <img src="assets/logos/search.svg" alt="search">
+                    <input type="text" placeholder="Search">
+                </label>
+            </form>
+        </div>
+
+        <div class="header__nav">
+            <nav class="header__nav--list">
+               <ul class="header__nav--list--items">
+                   <li class="header__nav--list--item">
+                       <a href="#"><img src="assets/logos/Profile.svg" alt="profile"></a>
+                   </li>
+                   <li class="header__nav--list--item">
+                       <a href="#"><img src="assets/logos/carrito-white.svg" alt="carrito"></a>
+                   </li>
+               </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="slideshow">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div>
+                        <img src="assets/images/slides/3558632c-94f2-41f1-8ea5-24d222714f53___f58f95a4125148b59c7023e6a9aa7fa5.webp" alt="slides-1">
+                    </div>
+                    <div class="mySlides__items">
+                        <p class="text">Pantallas</p>
+                        <div class="mySlides__items--buttons">
+                            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div>
+                        <img src="assets/images/slides/a8c3b6c4-d38b-49d3-b22b-d850c252c51f___8acab518aa2652e93e952d1bf06bb839.gif" alt="slides-2">
+                    </div>
+                    <div class="mySlides__items">
+                        <p class="text">Zapatos</p>
+                        <div class="mySlides__items--buttons">
+                            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div>
+                        <img src="assets/images/slides/e1d732ef-a295-4483-a82c-8c0685c6344a___f9741414bb8f7ce1d835a36f6a3c44f1.gif" alt="slides-3">
+                    </div>
+                    <div class="mySlides__items">
+                        <p class="text">Celulares</p>
+                        <div class="mySlides__items--buttons">
+                            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div>
+                        <img src="assets/images/slides/0b59c18d-4727-4bda-8ddb-945660c10e42___13d8c8d4382f1b091c3a7e9b265763ef.webp" alt="slides-4">
+                    </div>
+                    <div class="mySlides__items">
+                        <p class="text">Linea Blanca</p>
+                        <div class="mySlides__items--buttons">
+                            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./script/index.js"></script>
+</html>
