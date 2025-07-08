@@ -8,14 +8,23 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
-            <a href="#"> <img src="assets/logos/sima.com.svg" alt="Siman"> </a>
+        <div class="header__logo--container">
+            <button id="hamburger-btn" class="header__logo--hamburgerButtom">☰</button>
+            <div class="header__logo--img">
+                <a href="#">
+                    <img
+                            id="logo-siman"
+                            src="assets/logos/siman.com.svg"
+                            alt="Siman"
+                    >
+                </a>
+            </div>
         </div>
 
         <div class="header__search">
             <form action="">
                 <label class="header__search--label">
-                    <img src="assets/logos/search.svg" alt="search">
+                    <img src="./assets/logos/search.svg" alt="search">
                     <input type="text" placeholder="Search">
                 </label>
             </form>
@@ -24,23 +33,36 @@
         <div class="header__nav">
             <nav class="header__nav--list">
                <ul class="header__nav--list--items">
-                   <li class="header__nav--list--item">
-                       <a href="#"><img src="assets/logos/Profile.svg" alt="profile"></a>
+                   <li id="profile" class="header__nav--list--item">
+                       <a href="#"><img src="./assets/logos/Profile.svg" alt="profile"></a>
                    </li>
-                   <li class="header__nav--list--item">
-                       <a href="#"><img src="assets/logos/carrito-white.svg" alt="carrito"></a>
+                   <li id="shop-card" class="header__nav--list--item">
+                       <a href="#"><img src="./assets/logos/carrito-white.svg" alt="carrito"></a>
                    </li>
                </ul>
             </nav>
         </div>
     </header>
 
+    <aside id="side-menu" class="side-menu">
+        <button id="close-btn" class="side-menu--close-btn">x</button>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </aside>
+
     <main class="main">
         <section class="slideshow">
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div>
-                        <img src="assets/images/slides/3558632c-94f2-41f1-8ea5-24d222714f53___f58f95a4125148b59c7023e6a9aa7fa5.webp" alt="slides-1">
+                        <img
+                                id="imgSlides1"
+                                src="./assets/images/slides/7cf6e13f-74ac-4090-987f-35670c6a78db___e5305584cd7986925daf0208fe7380e1.webp"
+                                alt="slides-1"
+                        >
                     </div>
                     <div class="mySlides__items">
                         <p class="text">Pantallas</p>
@@ -53,7 +75,11 @@
 
                 <div class="mySlides fade">
                     <div>
-                        <img src="assets/images/slides/a8c3b6c4-d38b-49d3-b22b-d850c252c51f___8acab518aa2652e93e952d1bf06bb839.gif" alt="slides-2">
+                        <img
+                                id="imgSlides2"
+                                src="./assets/images/slides/9e9ee171-ba28-4ced-87dc-b5fd2dbc4a5a___41e7fc11ae037e4c972a553c787389e3.gif"
+                                alt="slides-2"
+                        >
                     </div>
                     <div class="mySlides__items">
                         <p class="text">Zapatos</p>
@@ -66,7 +92,11 @@
 
                 <div class="mySlides fade">
                     <div>
-                        <img src="assets/images/slides/e1d732ef-a295-4483-a82c-8c0685c6344a___f9741414bb8f7ce1d835a36f6a3c44f1.gif" alt="slides-3">
+                        <img
+                                id="imgSlides3"
+                                src="./assets/images/slides/68c42769-f5ff-408c-8e88-43f5172cf370___7e6ecb4be374d73633bc8d944218ca67.gif"
+                                alt="slides-3"
+                        >
                     </div>
                     <div class="mySlides__items">
                         <p class="text">Celulares</p>
@@ -79,7 +109,11 @@
 
                 <div class="mySlides fade">
                     <div>
-                        <img src="assets/images/slides/0b59c18d-4727-4bda-8ddb-945660c10e42___13d8c8d4382f1b091c3a7e9b265763ef.webp" alt="slides-4">
+                        <img
+                                id="imgSlides4"
+                                src="./assets/images/slides/0068805d-4457-4b9c-8d14-8dfb41ce92bf___6623e287722ec54911ded94cca1cd87c.webp"
+                                alt="slides-4"
+                        >
                     </div>
                     <div class="mySlides__items">
                         <p class="text">Linea Blanca</p>
@@ -92,6 +126,13 @@
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+
+    </footer>
 </body>
 <script src="./script/index.js"></script>
+<script src="./script/slideshow.js"></script>
+<script src="./script/changeImageforWidth.js"></script>
+<script src="./script/aside-menu.js"></script>
 </html>
