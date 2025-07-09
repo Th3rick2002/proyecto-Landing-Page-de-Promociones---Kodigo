@@ -4,6 +4,7 @@
 @import url('./component/slideshow.css');
 @import url('component/aside-menu.css');
 @import url('./component/promociones.css');
+@import url('./component/footer.css');
 
 body {
     margin: 0;

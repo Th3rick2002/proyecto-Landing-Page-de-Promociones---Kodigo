@@ -1,4 +1,4 @@
-.card {
+.card, .card-large {
     border: var(--border-color);
     border-radius: 16px;
 }
@@ -36,4 +36,37 @@
     color: white;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        max-height: 60vh;
+    }
+
+    .card__content {
+        display: flex;
+    }
+
+    .card__title {
+        text-align: center;
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .card__text {
+        text-align: start;
+        font-size: 20px;
+        padding:0;
+    }
+
+    .card__link {
+        font-size: 22px;
+        background-color: var(--secondary-color);
+        padding: 0.5rem 1rem;
+        width: auto;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
